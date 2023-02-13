@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug .ms_header-box {
+    border: 1px solid red;
+
+}
+.debug .ms_box {
+    min-height: 150px;
+    border: 1px solid black;
+}
+
+
+
+
+header {
+    height: 70px;
+    background-color: #2c3e50;
+}
