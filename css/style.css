@@ -57,9 +57,9 @@ main {
     border: 0;
 }
 .ms_radius {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
     border-radius: 50%;
 }
 #ms_footer-top {
@@ -68,4 +68,5 @@ main {
 }
 #ms_footer-bottom {
     background-color: var(--ms_ColorDarkGray);
+    width: 100%;
 }

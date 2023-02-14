@@ -10,7 +10,7 @@
     <title>Bootstrap freelancer</title>
 </head>
 <body class="debug">
-    <header class="fixed-top me-3">    <!--questo margin/end è molto dubbio-->
+    <header class="fixed-top">
         <nav class="navbar navbar-expand-lg h-100" id="navbar">
             <div class="container">
               <a class="navbar-brand text-white fw-bold" href="#">START BOOTSTRAP</a>
@@ -38,7 +38,7 @@
         <section class="py-5" id="hero">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-8 col-md-4 text-center ms_border p-2">
+                    <div class="col-8 col-md-4 text-center p-2">
                         <img src="img/avatar.svg" alt="">
                     </div>
                     <div class="col-10 text-center text-white fw-bold fs-1">START BOOTSTRAP</div>
@@ -105,12 +105,12 @@
                     <div class="col-8 col-md-5 text-light mt-4">
                         <div>Lorem ipsum dolor sit amet cong elit. Omnis suscipit consectetur, perferendis perspsectetur adipisicing elit. Sapiente delectus sint beatae facere, doloribus quo earum laboriosam sequi labore blanditiis.</div>
                     </div>
-                    <div class="col-8 col-md-5 text-light mt-4">
+                    <div class="col-8 col-md-4 text-light mt-4">
                         <div>Korem ipsum dolorg elit. Omnis suscipit consectetur, perferendis perspg elit. Omnis suscipit consectetur, perferendis perspiciatis autem sunt nostrum laudantium ipsam animi nesciunt!</div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-2 offset-5 my-4">
+                <div class="row justify-content-center">
+                    <div class="col-3 col-md-2 my-4">
                         <button type="button" class="btn btn-outline-light">
                             <a href="#" class="fw-semibold text-decoration-none text-white text-nowrap"><i class="fa-solid fa-download pe-1"></i> Download</a>
                         </button>
@@ -154,23 +154,23 @@
         <footer>
             <section class="py-5" id="ms_footer-top">
                 <div class="container">
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center g-2">
                         <div class="col-10 col-md-4 text-center text-light pb-4">
                             <div>
-                                <div>LOCATION</div>
-                                <div>2215 John daniel Drive Clark, MO 54243</div>
+                                <div class="mb-2 fw-semibold fs-5">LOCATION</div>
+                                <div class="fs-6">2215 John daniel Drive Clark, MO 54243</div>
                             </div>
                         </div>
                         <div class="col-10 col-md-4 text-center text-light pb-4">
                             <div>
-                                <div>AROUND THE WEB</div>
-                                <span><i class="fa-brands fa-facebook-f border border-white ms_radius"></i></span><i class="fa-brands fa-google-plus-g"></i><span></span><i class="fa-brands fa-twitter"></i><span><i class="fa-brands fa-linkedin-in"></i></span>
+                                <div class="mb-2 fw-semibold fs-5">AROUND THE WEB</div>
+                                <span><i class="fa-brands fa-facebook-f border border-white ms_radius mx-2"></i></span><i class="fa-brands fa-google-plus-g ms_radius border border-white mx-2"></i><span></span><i class="fa-brands fa-twitter ms_radius border border-white mx-2"></i><span><i class="fa-brands fa-linkedin-in ms_radius border border-white mx-2"></i></span>
                             </div>
                         </div>
                         <div class="col-10 col-md-4 text-center text-light pb-4">
                             <div>
-                                <div>ABOUT FREELANCER</div>
-                                <div>Freelancer is a free to use, open source Bootstrap theme created by <a href="#" class="ms_text-green">Start Bootstrap</a>.</div>
+                                <div class="mb-2 fw-semibold fs-5">ABOUT FREELANCER</div>
+                                <div class="fs-6">Freelancer is a free to use, open source Bootstrap theme created by <a href="#" class="ms_text-green">Start Bootstrap</a>.</div>
                             </div>
                         </div>
                     </div>
@@ -178,8 +178,10 @@
             </section>
 
             <section id="ms_footer-bottom">
-                <div class="row">
-                    <div class="col-2 offset-5 text-center">ciao</div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-4 text-center py-3 text-white">Copyright Your Website 2019</div>
+                    </div>
                 </div>
             </section>
         </footer>
