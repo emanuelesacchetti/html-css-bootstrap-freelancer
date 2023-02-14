@@ -20,6 +20,8 @@
 }
 .ms_text-dark { color: var(--ms_ColorDarkGray); }
 .ms_bg-dark { background-color: var(--ms_ColorDarkGray); }
+.ms_text-green { color: var(--ms_ColorGreen); }
+
 
 header {
     height: 70px;
@@ -44,12 +46,26 @@ main {
 #about {
     background-color: var(--ms_ColorGreen);
 }
+.ms_border-input {
+    border: 0 0 1px 0;
+}
+#message {
+    height: 100px;
+}
+#contact form button {
+    background-color: var(--ms_ColorGreen);
+    border: 0;
+}
+.ms_radius {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+}
 #ms_footer-top {
     background-color: var(--ms_ColorDarkGray);
-    height: 150px;
     width: 100%;
 }
 #ms_footer-bottom {
-    height: 40px;
     background-color: var(--ms_ColorDarkGray);
 }
