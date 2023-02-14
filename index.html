@@ -11,33 +11,22 @@
 </head>
 <body class="debug">
     <header class="fixed-top me-3">    <!--questo margin/end è molto dubbio-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary h-100">
+        <nav class="navbar navbar-expand-lg h-100" id="navbar">
             <div class="container">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand text-white fw-bold" href="#">START BOOTSTRAP</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link text-white fw-semibold" href="portfolio">PORTFOLIO</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    <a class="nav-link text-white fw-semibold" href="about">ABOUT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link text-white fw-semibold" href="about">CONTACT</a>
                   </li>
                 </ul>
                 
@@ -48,41 +37,57 @@
     <main>
         <section class="py-5" id="hero">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-2 offset-md-5 text-center ms_border p-2">IMAGE</div>
-                    <div class="col-12 col-md-4 offset-md-4 text-center text-light ms_border">start</div>
-                    <div class="col-12 col-md-4 offset-md-4 text-center text-light ms_border">riga stella riga</div>
-                    <div class="col-12 col-md-4 offset-md-4 text-center text-light ms_border">ciao-ciao-ciao</div>
+                <div class="row justify-content-center">
+                    <div class="col-8 col-md-4 text-center ms_border p-2">
+                        <img src="img/avatar.svg" alt="">
+                    </div>
+                    <div class="col-10 text-center text-white fw-bold fs-1">START BOOTSTRAP</div>
+                    <div class="col-10 text-center text-light d-flex justify-content-center align-items-center my-2">
+                        <span class="ms_design-row bg-white"></span><span class="ms_star fs-3 px-3"><i class="fa-solid fa-star"></i></span><span class="ms_design-row bg-white"></span>
+                    </div>
+                    <div class="col-10 col-md-10 text-center text-light text-white fs-6 fw-semibold">GRAFICH ARTIST - WEB DESIGNER - ILLUSTRATOR</div>
                 </div>
             </div>
         </section>
 
         <section class="py-5" id="portfolio">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-4 offset-md-4 text-center">portfolio</div>
-                    <div class="col-12 col-md-4 offset-md-4 text-center d-flex align-items-center justify-content-center">
-                        <span class="riga"></span><span class="stella"><i class="fa-solid fa-star"></i></span><span class="riga"></span>
+                <div class="row justify-content-center">
+                    <div class="col-10 text-center fs-2 fw-semibold ms_section-title">PORTFOLIO</div>
+                    <div class="col-10 text-center d-flex align-items-center justify-content-center my-2">
+                        <span class="ms_design-row ms_bg-dark"></span><span class="ms_star fs-3 px-3 ms_text-dark"><i class="fa-solid fa-star"></i></span><span class="ms_design-row ms_bg-dark"></span>
                     </div>
                 </div>
                 <div class="row g-3">
                     <div class="col-12 col-md-6 col-lg-4 text-center ">
-                        <div class="ms_border"></div>
+                        <div>
+                            <img class="img-fluid rounded-2" src="img/cabin.png" alt="">
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 text-center ">
-                        <div class="ms_border"></div>
+                        <div>
+                            <img class="img-fluid rounded-2" src="img/cake.png" alt="">
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 text-center ">
-                        <div class="ms_border"></div>
+                        <div>
+                            <img class="img-fluid rounded-2" src="img/circus.png" alt="">
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 text-center ">
-                        <div class="ms_border"></div>
+                        <div>
+                            <img class="img-fluid rounded-2" src="img/game.png" alt="">
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 text-center ">
-                        <div class="ms_border"></div>
+                        <div>
+                            <img class="img-fluid rounded-2" src="img/safe.png" alt="">
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 text-center ">
-                        <div class="ms_border"></div>
+                        <div>
+                            <img class="img-fluid rounded-2" src="img/submarine.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -90,20 +95,26 @@
 
         <section class="py-5" id="about">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-4 offset-md-4 text-center text-light">about</div>
-                    <div class="col-12 col-md-4 offset-md-4 text-center text-light">riga stella riga</div>
-                </div>
-                <div class="row">
-                    <div class="col-10 offset-1 col-md-4 offset-md-2 text-light">
-                        <div class="ms_border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente delectus sint beatae facere, doloribus quo earum laboriosam sequi labore blanditiis.</div>
-                    </div>
-                    <div class="col-10 offset-1 col-md-4 offset-md-0 text-light">
-                        <div class="ms_border">Korem ipsum dolor sit amet consectetur adipisicing elit. Omnis suscipit consectetur, perferendis perspiciatis autem sunt nostrum laudantium ipsam animi nesciunt!</div>
+                <div class="row justify-content-center">
+                    <div class="col-10 text-center fs-2 fw-semibold ms_section-title">ABOUT</div>
+                    <div class="col-10 text-center d-flex align-items-center justify-content-center my-2">
+                        <span class="ms_design-row bg-white"></span><span class="ms_star fs-3 px-3 text-white"><i class="fa-solid fa-star"></i></span><span class="ms_design-row bg-white"></span>
                     </div>
                 </div>
+                <div class="row justify-content-center">
+                    <div class="col-10 col-md-5 text-light">
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente delectus sint beatae facere, doloribus quo earum laboriosam sequi labore blanditiis.</div>
+                    </div>
+                    <div class="col-10 col-md-5 text-light">
+                        <div>Korem ipsum dolorg elit. Omnis suscipit consectetur, perferendis perspiciatis autem sunt nostrum laudantium ipsam animi nesciunt!</div>
+                    </div>
+                </div>
                 <div class="row">
-                    <div class="col-2 offset-5 text-center border border-light">ciao</div>
+                    <div class="col-2 offset-5 my-3">
+                        <button type="button" class="btn btn-outline-light">
+                            <a href="#" class="fw-semibold text-decoration-none text-white"><div><i class="fa-solid fa-download"></i> Download</div></a>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
