@@ -10,76 +10,134 @@
     <title>Bootstrap freelancer</title>
 </head>
 <body class="debug">
-    <header>
-        <div class="container ms_header-box" id="header-cont">
-            <div class="row align-items-center">
-                <div class="col-3 ms_header-box text-light">logo</div>
-                <!--<div><i class="col-1 offset-4 hamburger text-light d-block d-sm-none fa-solid fa-bars"></i></div>-->
-                <div class="col-4 offset-5 d-none d-sm-block ms_header-box text-light">ciao ciao ciao ciao</div>
+    <header class="fixed-top me-3">    <!--questo margin/end è molto dubbio-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary h-100">
+            <div class="container">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
                 
-                
+              </div>
             </div>
-        </div>
+          </nav>
     </header>
     <main>
-        <section class="container-fluid" id="hero">
-            <div class="row p-3">
-                <div class="col-12 col-sm-2 offset-sm-5 text-center ms_border p-2">IMAGE</div>
-                <div class="col-12 col-sm-4 offset-sm-4 text-center text-light ms_border">start</div>
-                <div class="col-12 col-sm-4 offset-sm-4 text-center text-light ms_border">riga stella riga</div>
-                <div class="col-12 col-sm-4 offset-sm-4 text-center text-light ms_border">ciao-ciao-ciao</div>
+        <section class="py-5" id="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-2 offset-md-5 text-center ms_border p-2">IMAGE</div>
+                    <div class="col-12 col-md-4 offset-md-4 text-center text-light ms_border">start</div>
+                    <div class="col-12 col-md-4 offset-md-4 text-center text-light ms_border">riga stella riga</div>
+                    <div class="col-12 col-md-4 offset-md-4 text-center text-light ms_border">ciao-ciao-ciao</div>
+                </div>
             </div>
         </section>
 
-        <section class="container p-3" id="portfolio">
-            <div class="row">
-                <div class="col-12 col-sm-4 offset-sm-4 text-center">portfolio</div>
-                <div class="col-12 col-sm-4 offset-sm-4 text-center">riga stella riga</div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md-4 text-center ms_border">ciao</div>
-                <div class="col-12 col-sm-6 col-md-4 text-center ms_border">ciao</div>
-                <div class="col-12 col-sm-6 col-md-4 text-center ms_border">ciao</div>
-                <div class="col-12 col-sm-6 col-md-4 text-center ms_border">ciao</div>
-                <div class="col-12 col-sm-6 col-md-4 text-center ms_border">ciao</div>
-                <div class="col-12 col-sm-6 col-md-4 text-center ms_border">ciao</div>
-            </div>
-        </section>
-
-        <section class="container-fluid p-3" id="about">
-            <div class="row">
-                <div class="col-12 col-sm-4 offset-sm-4 text-center text-light">about</div>
-                <div class="col-12 col-sm-4 offset-sm-4 text-center text-light">riga stella riga</div>
-            </div>
-            <div class="row">
-                <div class="col-10 offset-1 col-sm-4 offset-sm-2 ms_border text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente delectus sint beatae facere, doloribus quo earum laboriosam sequi labore blanditiis.</div>
-                <div class="col-10 offset-1 col-sm-4 offset-sm-0 ms_border text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis suscipit consectetur, perferendis perspiciatis autem sunt nostrum laudantium ipsam animi nesciunt!</div>
-            </div>
-            <div class="row">
-                <div class="col-2 offset-5 text-center border border-light">ciao</div>
-            </div>
-        </section>
-
-        <section class="container p-3" id="contact">
-            <div class="row">
-                <div class="col-12 col-sm-4 offset-sm-4 text-center">contact</div>
-                <div class="col-12 col-sm-4 offset-sm-4 text-center">riga stella riga</div>
-            </div>
-            <div class="col-10 offset-1 col-sm-8 offset-sm-2">
-                <div class="border-bottom">ciao</div>
-                <div class="border-bottom">ciao</div>
-                <div class="border-bottom">ciao</div>
-                <div class="border-bottom ms_message">ciao</div>
-                <button type="submit" class="btn btn-primary">ciao</button>
+        <section class="py-5" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 offset-md-4 text-center">portfolio</div>
+                    <div class="col-12 col-md-4 offset-md-4 text-center d-flex align-items-center justify-content-center">
+                        <span class="riga"></span><span class="stella"><i class="fa-solid fa-star"></i></span><span class="riga"></span>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4 text-center ">
+                        <div class="ms_border"></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center ">
+                        <div class="ms_border"></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center ">
+                        <div class="ms_border"></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center ">
+                        <div class="ms_border"></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center ">
+                        <div class="ms_border"></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center ">
+                        <div class="ms_border"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <footer class="container-fluid p-0 m-0">
-            <section id="ms_footer-top">
-                <div class="row justify-content-center p-3 m-0">
-                    <div class="col-10 col-sm-3 text-center text-light ms_border">ciao</div>
-                    <div class="col-10 col-sm-3 text-center text-light ms_border">ciao</div>
-                    <div class="col-10 col-sm-3 text-center text-light ms_border">ciao</div>
+        <section class="py-5" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 offset-md-4 text-center text-light">about</div>
+                    <div class="col-12 col-md-4 offset-md-4 text-center text-light">riga stella riga</div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1 col-md-4 offset-md-2 text-light">
+                        <div class="ms_border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente delectus sint beatae facere, doloribus quo earum laboriosam sequi labore blanditiis.</div>
+                    </div>
+                    <div class="col-10 offset-1 col-md-4 offset-md-0 text-light">
+                        <div class="ms_border">Korem ipsum dolor sit amet consectetur adipisicing elit. Omnis suscipit consectetur, perferendis perspiciatis autem sunt nostrum laudantium ipsam animi nesciunt!</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2 offset-5 text-center border border-light">ciao</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 offset-md-4 text-center">contact</div>
+                    <div class="col-12 col-md-4 offset-md-4 text-center">riga stella riga</div>
+                </div>
+                <div class="col-10 offset-1 col-md-8 offset-md-2">
+                    <div class="border-bottom">ciao</div>
+                    <div class="border-bottom">ciao</div>
+                    <div class="border-bottom">ciao</div>
+                    <div class="border-bottom ms_message">ciao</div>
+                    <button type="submit" class="btn btn-primary">ciao</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <section class="py-5" id="ms_footer-top">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-4 text-center text-light">
+                            <div class="ms_border">ciao</div>
+                        </div>
+                        <div class="col-12 col-md-4 text-center text-light">
+                            <div class="ms_border">ciao</div>
+                        </div>
+                        <div class="col-12 col-md-4 text-center text-light ">
+                            <div class="ms_border">ciao</div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
