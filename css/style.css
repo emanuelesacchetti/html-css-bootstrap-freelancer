@@ -23,11 +23,15 @@
 .ms_text-green { color: var(--ms_ColorGreen); }
 
 
-header {
-    height: 70px;
-}
+
 #navbar {
     background-color: var(--ms_ColorDarkGray);
+}
+.nav-item .nav-link {
+    color: white;
+}
+.nav-item:hover .nav-link {
+    color: var(--ms_ColorGreen);
 }
 main {
     margin-top: 70px;
@@ -43,11 +47,42 @@ main {
 #portfolio .row .ms_section-title {
     color: var(--ms_ColorDarkGray);
 }
+
+.image {
+    position: relative;
+}
+.image:hover .overlay {
+    display: flex;
+}
+.image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 188, 156, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.overlay i {
+    color: white;
+    font-size: 90px;
+}
+
 #about {
     background-color: var(--ms_ColorGreen);
 }
 .ms_border-input {
     border: 0 0 1px 0;
+}
+.ms_form-text input, .ms_form-text textarea {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 0;
+    padding-left: 0;
 }
 #message {
     height: 100px;

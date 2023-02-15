@@ -11,7 +11,7 @@
 </head>
 <body class="debug">
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg h-100" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3" id="navbar">
             <div class="container">
               <a class="navbar-brand text-white fw-bold" href="#">START BOOTSTRAP</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,13 +20,13 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link text-white fw-semibold" href="portfolio">PORTFOLIO</a>
+                    <a class="nav-link fw-semibold" href="#portfolio">PORTFOLIO</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white fw-semibold" href="about">ABOUT</a>
+                    <a class="nav-link fw-semibold" href="#about">ABOUT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white fw-semibold" href="about">CONTACT</a>
+                    <a class="nav-link fw-semibold" href="#about">CONTACT</a>
                   </li>
                 </ul>
                 
@@ -60,33 +60,51 @@
                 </div>
                 <div class="row g-3">
                     <div class="col-12 col-md-6 col-lg-4 text-center ">
-                        <div>
-                            <img class="img-fluid rounded-2" src="img/cabin.png" alt="">
+                        <div class="image rounded-2 overflow-hidden">
+                            <img class="img-fluid" src="img/cabin.png" alt="">
+                            <div class="overlay">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 text-center ">
-                        <div>
-                            <img class="img-fluid rounded-2" src="img/cake.png" alt="">
+                        <div class="image rounded-2 overflow-hidden">
+                            <img class="img-fluid" src="img/cake.png" alt="">
+                            <div class="overlay">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 text-center ">
-                        <div>
-                            <img class="img-fluid rounded-2" src="img/circus.png" alt="">
+                        <div class="image rounded-2 overflow-hidden">
+                            <img class="img-fluid" src="img/circus.png" alt="">
+                            <div class="overlay">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 text-center ">
-                        <div>
-                            <img class="img-fluid rounded-2" src="img/game.png" alt="">
+                        <div class="image rounded-2 overflow-hidden">
+                            <img class="img-fluid" src="img/game.png" alt="">
+                            <div class="overlay">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 text-center ">
-                        <div>
-                            <img class="img-fluid rounded-2" src="img/safe.png" alt="">
+                        <div class="image rounded-2 overflow-hidden">
+                            <img class="img-fluid" src="img/safe.png" alt="">
+                            <div class="overlay">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 text-center ">
-                        <div>
-                            <img class="img-fluid rounded-2" src="img/submarine.png" alt="">
+                        <div class="image rounded-2 overflow-hidden">
+                            <img class="img-fluid" src="img/submarine.png" alt="">
+                            <div class="overlay">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,13 +123,13 @@
                     <div class="col-8 col-md-5 text-light mt-4">
                         <div>Lorem ipsum dolor sit amet cong elit. Omnis suscipit consectetur, perferendis perspsectetur adipisicing elit. Sapiente delectus sint beatae facere, doloribus quo earum laboriosam sequi labore blanditiis.</div>
                     </div>
-                    <div class="col-8 col-md-4 text-light mt-4">
+                    <div class="col-8 col-md-5 text-light mt-4">
                         <div>Korem ipsum dolorg elit. Omnis suscipit consectetur, perferendis perspg elit. Omnis suscipit consectetur, perferendis perspiciatis autem sunt nostrum laudantium ipsam animi nesciunt!</div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-3 col-md-2 my-4">
-                        <button type="button" class="btn btn-outline-light">
+                    <div class="col-12 text-center py-4">
+                        <button type="button" class="btn btn-lg btn-outline-light">
                             <a href="#" class="fw-semibold text-decoration-none text-white text-nowrap"><i class="fa-solid fa-download pe-1"></i> Download</a>
                         </button>
                     </div>
@@ -128,26 +146,24 @@
                     </div>
                 </div>
                 <form>
-                    
-
-                    <div class="mb-3 form-text">
-                      <input type="name" class="border-bottom border-start-0 border-end-0 border-top-0 rounded-0 form-control pb-2 pt-0 fw-semibold" id="name" placeholder="Name">
+                    <div class="mb-3 ms_form-text">
+                      <input type="text" class="border-bottom form-control pb-2 pt-0 fw-semibold" id="name" placeholder="Name">
                     </div>
 
-                    <div class="mb-3 form-text">
-                        <input type="email" class="border-bottom border-start-0 border-end-0 border-top-0 rounded-0 form-control pb-2 pt-0 fw-semibold" id="email" aria-describedby="emailHelp" placeholder="Email Address">
+                    <div class="mb-3 ms_form-text">
+                        <input type="email" class="border-bottom form-control pb-2 pt-0 fw-semibold" id="email" placeholder="Email Address">
                     </div>
 
-                    <div class="mb-3 form-text">
-                      <input type="number" class="border-bottom border-start-0 border-end-0 border-top-0 rounded-0 form-control pb-2 pt-0 fw-semibold" id="number" placeholder="Phone Number">
+                    <div class="mb-3 ms_form-text">
+                      <input type="text" class="border-bottom form-control pb-2 pt-0 fw-semibold" id="number" placeholder="Phone Number">
                       
                     </div>
 
-                    <div class="mb-3 form-text">
-                        <input type="textarea" class="border-bottom border-start-0 border-end-0 border-top-0 rounded-0 form-control pb-2 pt-0 fw-semibold" id="message" placeholder="Message">
+                    <div class="mb-3 ms_form-text">
+                        <textarea class="border-bottom form-control pb-2 pt-0 fw-semibold" id="message" placeholder="Message"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send</button>
-                  </form>
+                </form>
             </div>
         </section>
 
@@ -170,7 +186,7 @@
                         <div class="col-10 col-md-4 text-center text-light pb-4">
                             <div>
                                 <div class="mb-2 fw-semibold fs-5">ABOUT FREELANCER</div>
-                                <div class="fs-6">Freelancer is a free to use, open source Bootstrap theme created by <a href="#" class="ms_text-green">Start Bootstrap</a>.</div>
+                                <div class="fs-6">Freelancer is a free to use, open source Bootstrap theme created by <a href="#" class="ms_text-green text-decoration-none">Start Bootstrap</a>.</div>
                             </div>
                         </div>
                     </div>
